@@ -95,6 +95,10 @@ ul {
     display: flex;
 }
 
+p {
+    font-size: 20px;
+}
+
 .boxes .box {
     margin: 25px 0;
     padding: 20px 10px;
@@ -102,12 +106,13 @@ ul {
 }
 
 .boxes .box h2 {
-    flex: 0 0 20px;
+    flex: 0 0 10px;
     text-align: right;
     color: #2d2828;
     border-right: 4px solid #2d2828;
     font-size: 50px;
     line-height: 1.1;
+    align-items: center;
 }
 
 .imbox {
@@ -115,12 +120,74 @@ ul {
     flex-direction: row;
     padding: 30px;
     margin: 50px;
-    
+    flex-wrap: wrap;
 }
 
-.boximg {
+.boxim {
     display: flex;
     flex-direction: column;
-    
+    margin: 10px 10px;
+}
 
+.boxim:nth-of-type(1) {
+    flex: 1 0 800px;
+}
+
+.boxim:nth-of-type(2) {
+    flex: 1 0 300px;
+}
+
+.boxim:nth-of-type(3) {
+    flex: 1 0 350px;
+}
+
+.boxim .bottom-html {
+    position: relative;
+    bottom: 50px;
+    left: 700px;
+    color: antiquewhite;
+    font-size: x-large;
+    font-weight: bold;
+    }
+
+.boxim .bottom-css {
+    position: relative;
+    bottom: 40px;
+    left: 250px;
+    color: antiquewhite;
+    font-size: large;
+    font-weight: bold;
+    }
+
+.boxim .bottom-js {
+    position: relative;
+    bottom: 40px;
+    left: 250px;
+    color: antiquewhite;
+    font-size: large;
+    font-weight: bold;
+    }
+
+.box a {
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 30px;
+    color: #2d2828;
+    font-size: 20px;
+}
+
+#cont {
+    margin-right: 90px;
+}
+
+.box .nav {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.nav a:hover {
+    color: rgb(101, 101, 101);
 }
